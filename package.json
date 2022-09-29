@@ -1,0 +1,22 @@
+{
+  "name": "stack-queue-ll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyad-mansour/stack-queue-LL.git"
+  },
+  "author": "eyad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eyad-mansour/stack-queue-LL/issues"
+  },
+  "homepage": "https://github.com/eyad-mansour/stack-queue-LL#readme",
+  "dependencies": {
+    "jest": "^29.0.3"
+  }
+}
