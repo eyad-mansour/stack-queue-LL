@@ -2,29 +2,6 @@
 
 const Node = require('./node');
 
-class Stack {
-  constructor() {
-    this.storage = [];
-    this.top = null;
-  }
-  peek() {
-    return this.top;
-  }
-
-  pushItem(item) {
-    this.storage.push(item);
-    this.top = item;
-  }
-
-  popItem() {
-    let poppedItem = this.storage.pop();
-    this.top = this.storage[this.storage.length - 1];
-    return poppedItem;
-  }
-}
-
-// module.exports = Stack;
-
 class StackLL {
   constructor() {
     this.top = null;
@@ -58,3 +35,26 @@ class StackLL {
   }
 }
 module.exports = StackLL;
+
+class Stack {
+  constructor() {
+    this.storage = [];
+    this.top = null;
+  }
+  peek() {
+    return this.top;
+  }
+
+  pushItem(item) {
+    this.storage.push(item);
+    this.top = item;
+  }
+
+  popItem() {
+    let poppedItem = this.storage.pop();
+    this.top = this.storage[this.storage.length - 1];
+    return poppedItem;
+  }
+}
+
+// module.exports = Stack;

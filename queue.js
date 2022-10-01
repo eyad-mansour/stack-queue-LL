@@ -27,16 +27,40 @@ class QueueLL {
     this.rear = null;
   }
 
-  enqueue(value) {
-    const node = new Node(value);
-    if (this.rear === null) {
+  enqueue(val) {
+    const node = new Node(val);
+    if (this.rear === null && this.front === null) {
       this.front = this.rear = node;
       return node;
     } else {
-      const newNode = this.front;
-
+      this.rear.next = node;
+      this.rear = node;
       return node;
     }
+  }
+
+  dequeue() {
+    if (this.front === null) {
+      return 'The queue is already empty';
+    }
+    let prev = this.front;
+    this.front = this.front.next;
+    if (this.front === null) {
+      this.rear = null;
+    }
+    return prev;
+  }
+
+  peek() {
+    if (this.rear) {
+      return this.rear.value;
+    } else {
+      return 'Queue is empty';
+    }
+  }
+
+  isEmpty() {
+    return this.front ? false : true;
   }
 }
 
