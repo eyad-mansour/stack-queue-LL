@@ -37,9 +37,17 @@ newStackLL.insert(56);
 console.log(newStackLL);
 
 // queueLL
+
+console.log(newQueue.isEmpty());
+console.log(newQueue.dequeue());
 console.log(newQueue.enqueue(2));
 
 console.log(newQueue.enqueue(3));
 console.log(newQueue.enqueue(4));
+
 console.log(newQueue.enqueue(5));
 console.log(newQueue.enqueue(23));
+console.log(newQueue.dequeue());
+
+console.log(newQueue.peek());
+console.log(newQueue.isEmpty());
